@@ -26,7 +26,14 @@ def superReducedString(s):
         return ''.join(stack)
     else:
         return 'Empty String'
-    
+
+#for the visitors :)
+#while doing this problem i learned about string manipulation method - how can you remove any value in between a string
+# well as you know string are immutable in python so any manipulation can happen on a new string 
+#string[start:end:step] -->syntax 
+#string = 'abcdefs' --> we will remove a char at index 2
+#newstr = string[:2]+string[2+1:] --> it will store abdefs removing c from index 2
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
