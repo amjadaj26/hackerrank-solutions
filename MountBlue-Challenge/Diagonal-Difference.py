@@ -25,6 +25,17 @@ def diagonalDifference(arr):
         rightdiagonal += arr[j][k]
         k+=1
     return abs(leftdiagonal - rightdiagonal)
+
+# we can also use the below single loop solution. 
+# def diagonalDifference(arr):
+#     prim =0
+#     sec=0
+#     length = len(arr[0])
+#     for count in range(length):
+#         prim += arr[count][count]
+#         sec += arr[count][(length-count-1)]
+#     return abs(prim-sec)
+    
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
