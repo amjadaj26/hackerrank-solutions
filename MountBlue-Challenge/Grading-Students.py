@@ -25,6 +25,14 @@ def gradingStudents(grades):
             my_result.append(i)
     return my_result
 
+    # we can also use this way
+    # for i in range(len(grades)):
+    #     if(grades[i]>37):
+    #         if((grades[i]%5)!=0):
+    #             if(5-(grades[i]%5)<3):
+    #                 grades[i]+=5-(grades[i]%5)
+    # return (grades)
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
