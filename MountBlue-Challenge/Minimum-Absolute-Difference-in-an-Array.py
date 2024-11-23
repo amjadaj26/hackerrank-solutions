@@ -21,6 +21,15 @@ def minimumAbsoluteDifference(arr):
         min_diff.append(abs(arr[i]-arr[i+1]))
     return min(min_diff)
 
+    # or this below also work 
+    # min_diff=abs(arr[0]-arr[1]) 
+    # arr.sort()
+    # for i in range(len(arr)-1):
+    #     diff = abs(arr[i]-arr[i+1])
+    #     if diff<min_diff:
+    #         min_diff = diff
+    # return (min_diff)
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
